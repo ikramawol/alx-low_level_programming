@@ -6,12 +6,12 @@
   *@size: size of array.
   *@c: char to initialize array with.
   *
-  *Pointer to array.
   *Return: NULL if it fails or
+  *Pointer to array.
   */
 char *create_array(unsigned int size, char c)
 {
-	char *a;
+	char *arr;
 	unsigned int i;
 
 	if (size == 0)
@@ -19,18 +19,18 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	a = malloc(sizeof(char) * size);
+	arr = malloc(sizeof(char) * size);
 
 	/* check if malloc was successful */
 
-	if (a == NULL)
+	if (arr == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
 	{
-		a[i] = c;
+		arr[i] = c;
 	}
 
-	return (a);
+	return (arr);
 
 }
