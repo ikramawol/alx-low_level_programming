@@ -10,5 +10,6 @@ int main(void)
 {
 
   printf("%s\n",__BASE_FILE__);
+  printf("\n");
   return (0);
 }
